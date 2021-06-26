@@ -1,0 +1,17 @@
+base rules:
+'<' := move pointer left.
+'>' := move pointer right.
+'+' := increment value at pointer.
+'-' := decrement value at pointer.
+'[' := start loop.
+']' := if current value is greater than 0, return to last '['.
+',' := set value at the pointer to next input character.
+'.' := print the value at the pointer to the output.
+
+additional rules:
+function/import:
+'{' := run the code contained in the file whose name appears after the brackets.
+'}' := designates the end of the file name for the external code.
+if statement:
+'?' := if value at pointer is 0 skip to ';'.
+';' := terminates conditional skip.
